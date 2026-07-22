@@ -1,0 +1,22 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="grill">
+  <defs>
+    <radialGradient id="g-grill" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#7A3620"/>
+      <stop offset="100%" stop-color="#3E2712"/>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="96" fill="#3E2712"/>
+  <circle cx="100" cy="100" r="88" fill="url(#g-grill)"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#6B4226" stroke-width="4" opacity=".7"/>
+  <circle cx="100" cy="100" r="94" fill="none" stroke="#F2B705" stroke-width="2" opacity=".55" stroke-dasharray="2 5"/>
+  
+    <ellipse cx="100" cy="140" rx="46" ry="10" fill="#3E2712" opacity=".5"/>
+    <path d="M78 70 Q60 82 66 108 Q70 128 96 132 Q118 132 124 112 Q128 96 112 84 Z" fill="#6B4226"/>
+    <path d="M82 76 Q68 88 74 108 Q78 122 98 126 Q114 126 118 110 Q120 98 108 88 Z" fill="#8A5A34"/>
+    <rect x="94" y="118" width="10" height="26" rx="4" fill="#3E2712"/>
+    <path d="M70 62 q6 -10 0 -18" stroke="#F2B705" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M100 58 q6 -12 0 -20" stroke="#F2B705" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M128 62 q6 -10 0 -18" stroke="#F2B705" stroke-width="4" fill="none" stroke-linecap="round"/>
+    
+  
+</svg>

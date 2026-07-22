@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — Jungle Foods</title>
+<meta name="description" content="A visual tour of Jungle Foods: Mandi, Biriyani, Chinese, Shawarma, mocktails and desserts.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="gallery">
+
+<div class="page-loader"><img src="assets/logo.png" alt="Loading"><span>Hanging the Photos…</span></div>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="navbar" id="siteNav">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="Jungle Foods logo">
+      <span class="brand-name">Jungle Foods<span>MANDI · BIRIYANI · MULTI-CUISINE</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" data-page="home">Home</a>
+      <a href="menu.html" data-page="menu">Menu</a>
+      <a href="about.html" data-page="about">About</a>
+      <a href="gallery.html" data-page="gallery">Gallery</a>
+      <a href="reviews.html" data-page="reviews">Reviews</a>
+      <a href="contact.html" data-page="contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="menu.html" class="btn btn-primary btn-sm">Order Now</a>
+      <button class="cart-btn" id="cartToggle" aria-label="Open cart">🧺<span class="cart-count">0</span></button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / <span>Gallery</span></div>
+    <div class="eyebrow" style="justify-content:center;">A visual menu</div>
+    <h1>Inside the Jungle</h1>
+    <p style="max-width:560px;margin:0 auto;">These are illustrated placeholders in our brand style — drop real photography into <code>assets/food/</code> using the same file names and they'll appear here automatically.</p>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="filter-row" id="galleryFilters"></div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+  <div class="lightbox-inner">
+    <div class="g-fill" id="lightboxImg"></div>
+    <h3 id="lightboxTitle"></h3>
+    <p id="lightboxCat" style="color:var(--gold-soft);"></p>
+  </div>
+</div>
+
+<footer class="footer" id="siteFooter"></footer>
+
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-head">
+    <h3 style="margin:0;">Your Basket</h3>
+    <button class="cart-close" id="cartClose" aria-label="Close cart">✕</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-foot">
+    <div class="cart-total-row"><span>Total</span><span id="cartTotal">₹0</span></div>
+    <button class="btn btn-primary btn-block" id="checkoutBtn">Checkout via WhatsApp</button>
+  </div>
+</aside>
+
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+<script src="js/main.js"></script>
+<script src="js/footer.js"></script>
+<script>
+const shots = [
+  {icon:'mandi', title:'Al Faham Chicken Mandi', cat:'Mandi', ar:'4/5'},
+  {icon:'mandi', title:'BBQ Chicken Mandi (Family Pack)', cat:'Mandi', ar:'1/1'},
+  {icon:'biriyani', title:'Bucket Biriyani', cat:'Biriyani', ar:'4/5'},
+  {icon:'biriyani', title:'Chicken 65 Biriyani', cat:'Biriyani', ar:'1/1'},
+  {icon:'friedrice', title:'Schezwan Chicken Fried Rice', cat:'Chinese', ar:'4/5'},
+  {icon:'noodles', title:'Prawn Noodles', cat:'Chinese', ar:'1/1'},
+  {icon:'curry', title:'Butter Chicken', cat:'Chinese', ar:'4/5'},
+  {icon:'drychicken', title:'Dragon Chicken', cat:'Chinese', ar:'1/1'},
+  {icon:'parotta', title:'Kothu Parotta', cat:'Indian Breads', ar:'4/5'},
+  {icon:'naan', title:'Garlic Naan', cat:'Indian Breads', ar:'1/1'},
+  {icon:'shawarma', title:'Chicken Shawarma Roll', cat:'Shawarma', ar:'4/5'},
+  {icon:'milkshake', title:'Snickers Milkshake', cat:'Beverages', ar:'1/1'},
+  {icon:'mojito', title:'Blueberry Mojito', cat:'Beverages', ar:'4/5'},
+  {icon:'juice', title:'Fresh Pomegranate Juice', cat:'Beverages', ar:'1/1'},
+  {icon:'coldcoffee', title:'Hard Rock Cold Coffee', cat:'Beverages', ar:'4/5'},
+  {icon:'falooda', title:'Jungle Special Falooda', cat:'Desserts', ar:'1/1'},
+  {icon:'icecream', title:'Black Currant Ice Cream', cat:'Desserts', ar:'4/5'},
+  {icon:'fruitsalad', title:'Royal Fruit Salad', cat:'Desserts', ar:'1/1'},
+  {icon:'streetfood', title:'Pani Poori', cat:'Street Food', ar:'4/5'},
+  {icon:'frozensnack', title:'French Fries', cat:'Snacks', ar:'1/1'},
+  {icon:'sandwich', title:'Tandoori Sandwich', cat:'Snacks', ar:'4/5'},
+];
+
+const cats = ['All', ...new Set(shots.map(s=>s.cat))];
+const filterEl = document.getElementById('galleryFilters');
+const gridEl = document.getElementById('galleryGrid');
+let active = 'All';
+
+function renderFilters(){
+  filterEl.innerHTML = cats.map(c => `<button class="chip ${c===active?'active':''}" data-cat="${c}">${c}</button>`).join('');
+  filterEl.querySelectorAll('.chip').forEach(btn => btn.addEventListener('click', () => {
+    active = btn.dataset.cat; renderFilters(); renderGrid();
+  }));
+}
+
+function renderGrid(){
+  const list = active === 'All' ? shots : shots.filter(s => s.cat === active);
+  gridEl.innerHTML = list.map((s,i) => `
+    <div class="gallery-item reveal in" data-i="${i}">
+      <div class="g-fill" style="--ar:${s.ar};"><img src="assets/icons/${s.icon}.svg" alt="${s.title}" loading="lazy"></div>
+      <div class="gallery-cap">${s.title}</div>
+    </div>`).join('');
+  gridEl.querySelectorAll('.gallery-item').forEach(el => el.addEventListener('click', () => openLightbox(list[+el.dataset.i])));
+}
+
+function openLightbox(item){
+  document.getElementById('lightboxImg').style.setProperty('--ar', item.ar);
+  document.getElementById('lightboxImg').innerHTML = `<img src="assets/icons/${item.icon}.svg" alt="${item.title}">`;
+  document.getElementById('lightboxTitle').textContent = item.title;
+  document.getElementById('lightboxCat').textContent = item.cat;
+  document.getElementById('lightbox').classList.add('open');
+}
+document.getElementById('lightboxClose').addEventListener('click', () => document.getElementById('lightbox').classList.remove('open'));
+document.getElementById('lightbox').addEventListener('click', (e) => { if(e.target.id === 'lightbox') e.currentTarget.classList.remove('open'); });
+
+renderFilters();
+renderGrid();
+</script>
+</body>
+</html>

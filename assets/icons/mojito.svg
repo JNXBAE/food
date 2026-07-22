@@ -1,0 +1,27 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="mojito">
+  <defs>
+    <radialGradient id="g-mojito" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#2E7A5C"/>
+      <stop offset="100%" stop-color="#123E2E"/>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="96" fill="#3E2712"/>
+  <circle cx="100" cy="100" r="88" fill="url(#g-mojito)"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#6B4226" stroke-width="4" opacity=".7"/>
+  <circle cx="100" cy="100" r="94" fill="none" stroke="#F2B705" stroke-width="2" opacity=".55" stroke-dasharray="2 5"/>
+  
+    <path d="M82 64 L118 64 L112 140 Q100 148 88 140 Z" fill="#3D8361" opacity=".55"/>
+    <circle cx="94" cy="90" r="3" fill="#F4EFE0" opacity=".7"/>
+    <circle cx="108" cy="104" r="3" fill="#F4EFE0" opacity=".7"/>
+    <circle cx="98" cy="116" r="3" fill="#F4EFE0" opacity=".7"/>
+    <path d="M92 60 q-14 -6 -16 -20 q14 2 20 14 Z" fill="#3D8361"/>
+    <path d="M112 58 q14 -8 14 -22 q-14 4 -18 16 Z" fill="#3D8361"/>
+    <circle cx="100" cy="70" r="10" fill="#E8C97A"/>
+    <path d="M100 62 L100 78 M92 70 L108 70" stroke="#6B4226" stroke-width="2"/>
+    
+  
+        <circle cx="70" cy="86" r="2.4" fill="#F4EFE0" opacity=".6"/>
+        <circle cx="132" cy="100" r="2" fill="#F4EFE0" opacity=".5"/>
+        <circle cx="76" cy="112" r="1.6" fill="#F4EFE0" opacity=".5"/>
+        
+</svg>

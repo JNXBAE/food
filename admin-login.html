@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Login — Jungle Foods</title>
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="admin-login">
+<div class="login-shell">
+  <div class="card login-card">
+    <img src="assets/logo.png" alt="Jungle Foods logo">
+    <h2 style="margin-bottom:4px;">Admin Login</h2>
+    <p style="margin-bottom:20px;">Sign in to manage Jungle Foods content</p>
+    <form class="styled" id="loginForm">
+      <div style="text-align:left;"><label>Username</label><input type="text" id="username" required placeholder="admin"></div>
+      <div style="text-align:left;"><label>Password</label><input type="password" id="password" required placeholder="••••••••"></div>
+      <button type="submit" class="btn btn-primary btn-block">Log In</button>
+    </form>
+    <div class="hint-box">Demo credentials — <strong>admin</strong> / <strong>jungle123</strong></div>
+    <p style="margin-top:18px;"><a href="index.html" style="color:var(--gold-soft);">← Back to website</a></p>
+  </div>
+</div>
+<script src="js/main.js"></script>
+<script>
+document.getElementById('loginForm').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const u = document.getElementById('username').value.trim();
+  const p = document.getElementById('password').value.trim();
+  if(u === 'admin' && p === 'jungle123'){
+    sessionStorage.setItem('jf_admin_auth', '1');
+    window.location.href = 'admin-dashboard.html';
+  } else {
+    JF.toast('Invalid username or password');
+  }
+});
+</script>
+</body>
+</html>

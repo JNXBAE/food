@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard — Jungle Foods</title>
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="admin">
+
+<div class="admin-shell">
+  <aside class="admin-side">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="Jungle Foods logo" style="width:40px;height:40px;">
+      <span class="brand-name" style="font-size:1.05rem;">Jungle Foods<span>ADMIN PANEL</span></span>
+    </a>
+    <nav class="admin-nav" id="adminNav">
+      <a href="#" data-view="overview" class="active">📊 Overview</a>
+      <a href="#" data-view="menu">🍽️ Menu Items</a>
+      <a href="#" data-view="categories">🗂️ Categories</a>
+      <a href="#" data-view="gallery">🖼️ Gallery</a>
+      <a href="#" data-view="reviews">⭐ Reviews</a>
+      <a href="#" data-view="photos">📸 Stock Photos</a>
+      <a href="#" data-view="settings">⚙️ Restaurant Info</a>
+    </nav>
+    <div style="margin-top:30px;padding-top:16px;border-top:1px solid rgba(255,255,255,.08);">
+      <a href="index.html" style="display:block;padding:11px 14px;color:var(--mist);">🌐 View Website</a>
+      <a href="#" id="logoutBtn" style="display:block;padding:11px 14px;color:var(--red-spice);">⏻ Log Out</a>
+    </div>
+  </aside>
+
+  <main class="admin-main">
+    <div class="admin-topbar">
+      <div>
+        <h2 id="viewTitle" style="margin-bottom:2px;">Overview</h2>
+        <p style="margin:0;">Manage your restaurant content — changes save automatically.</p>
+      </div>
+    </div>
+
+    <!-- OVERVIEW -->
+    <section id="view-overview">
+      <div class="stat-grid">
+        <div class="card stat-card"><b id="statItems">0</b><span>Menu Items</span></div>
+        <div class="card stat-card"><b id="statCats">0</b><span>Categories</span></div>
+        <div class="card stat-card"><b id="statReviews">0</b><span>Reviews</span></div>
+        <div class="card stat-card"><b id="statAvgRating">0</b><span>Avg. Rating</span></div>
+      </div>
+      <div class="card">
+        <h3>Quick Actions</h3>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:14px;">
+          <button class="btn btn-primary btn-sm" onclick="Admin.switchView('menu');Admin.openItemModal()">+ Add Menu Item</button>
+          <button class="btn btn-outline btn-sm" onclick="Admin.switchView('gallery')">+ Add Gallery Image</button>
+          <button class="btn btn-wood btn-sm" onclick="Admin.switchView('settings')">Edit Restaurant Info</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU ITEMS -->
+    <section id="view-menu" style="display:none;">
+      <div class="admin-topbar">
+        <div class="admin-search">
+          <input type="text" id="menuAdminSearch" placeholder="Search menu items…">
+          <select id="menuAdminFilter">
+            <option value="all">All Categories</option>
+          </select>
+        </div>
+        <button class="btn btn-primary btn-sm" onclick="Admin.openItemModal()">+ Add Menu Item</button>
+      </div>
+      <div class="admin-table-wrap">
+        <table class="admin-table">
+          <thead><tr><th>Dish</th><th>Category</th><th>Type</th><th>Price</th><th>Veg</th><th>Rating</th><th>Actions</th></tr></thead>
+          <tbody id="menuTableBody"></tbody>
+        </table>
+      </div>
+      <div class="pagination" id="menuPagination"></div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section id="view-categories" style="display:none;">
+      <div class="admin-topbar">
+        <p style="margin:0;">Categories are generated from the menu. Add a new one to start a new section.</p>
+        <button class="btn btn-primary btn-sm" onclick="Admin.openCategoryModal()">+ Add Category</button>
+      </div>
+      <div class="admin-table-wrap">
+        <table class="admin-table">
+          <thead><tr><th>Category</th><th>Group</th><th>Items</th><th>Actions</th></tr></thead>
+          <tbody id="catTableBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="view-gallery" style="display:none;">
+      <div class="admin-topbar">
+        <p style="margin:0;">Manage the images shown on the public Gallery page.</p>
+        <button class="btn btn-primary btn-sm" onclick="Admin.openGalleryModal()">+ Add Image</button>
+      </div>
+      <div class="admin-table-wrap">
+        <table class="admin-table">
+          <thead><tr><th>Preview</th><th>Title</th><th>Category</th><th>Actions</th></tr></thead>
+          <tbody id="galleryTableBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="view-reviews" style="display:none;">
+      <div class="admin-topbar">
+        <p style="margin:0;">Approve, edit or remove guest reviews.</p>
+      </div>
+      <div class="admin-table-wrap">
+        <table class="admin-table">
+          <thead><tr><th>Name</th><th>Rating</th><th>Feedback</th><th>Actions</th></tr></thead>
+          <tbody id="reviewTableBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- STOCK PHOTOS -->
+    <section id="view-photos" style="display:none;">
+      <div class="card" style="max-width:640px;margin-bottom:20px;">
+        <h3>Stock Photo API Setup</h3>
+        <p>Runs entirely in your browser with your own API key — nothing is sent through our servers. Get a free key from
+          <a href="https://unsplash.com/developers" target="_blank" style="color:var(--gold-soft);">Unsplash Developers</a> or
+          <a href="https://www.pexels.com/api/" target="_blank" style="color:var(--gold-soft);">Pexels API</a>.
+        </p>
+        <form class="styled" id="photoSettingsForm">
+          <div class="form-row">
+            <div>
+              <label>Provider</label>
+              <select id="photoProvider">
+                <option value="unsplash">Unsplash (50 req/hour on free tier)</option>
+                <option value="pexels">Pexels (200 req/hour on free tier)</option>
+              </select>
+            </div>
+            <div><label>API Key</label><input type="text" id="photoApiKey" placeholder="Paste your API key"></div>
+          </div>
+          <div><label>Search Suffix (appended to each dish name)</label><input type="text" id="photoSuffix" value="food dish"></div>
+          <button type="submit" class="btn btn-primary btn-sm">Save API Settings</button>
+        </form>
+      </div>
+
+      <div class="card" style="max-width:640px;">
+        <h3>Fetch Real Photos for All 177 Dishes</h3>
+        <p>Matches are found by searching each dish's name — results are <strong>visually similar stock photos</strong>, not verified photos of your actual food. Review results afterward and swap out any mismatches.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin:14px 0;">
+          <button class="btn btn-primary btn-sm" id="startFetchBtn">▶ Start / Resume Fetch</button>
+          <button class="btn btn-outline btn-sm" id="stopFetchBtn">⏸ Stop</button>
+          <button class="btn btn-danger btn-sm" id="clearPhotosBtn">🗑️ Clear All Cached Photos</button>
+        </div>
+        <div style="background:rgba(255,255,255,.05);border-radius:999px;height:10px;overflow:hidden;margin-bottom:8px;">
+          <div id="fetchProgressBar" style="height:100%;width:0%;background:linear-gradient(90deg,var(--gold),var(--leaf-green-soft));transition:width .3s;"></div>
+        </div>
+        <p id="fetchStatus" style="margin:0;font-size:.85rem;color:var(--mist);">Not started — <span id="cachedCount">0</span> / <span id="totalCount">0</span> dishes have a cached photo.</p>
+        <div class="hint-box" style="margin-top:14px;">Free API tiers are rate-limited. If a run stops partway, click <strong>Start / Resume</strong> again later — already-fetched dishes are skipped automatically.</div>
+      </div>
+    </section>
+
+    <!-- SETTINGS -->
+    <section id="view-settings" style="display:none;">
+      <div class="card" style="max-width:640px;">
+        <h3>Restaurant Information</h3>
+        <form class="styled" id="settingsForm">
+          <div><label>Restaurant Name</label><input type="text" id="setName"></div>
+          <div><label>Description</label><textarea id="setDesc"></textarea></div>
+          <div class="form-row">
+            <div><label>Phone</label><input type="text" id="setPhone"></div>
+            <div><label>WhatsApp</label><input type="text" id="setWhatsapp"></div>
+          </div>
+          <div><label>Instagram URL</label><input type="text" id="setInstagram"></div>
+          <div><label>Address</label><textarea id="setAddress"></textarea></div>
+          <div><label>Opening Hours</label><input type="text" id="setHours"></div>
+          <button type="submit" class="btn btn-primary">Save Changes</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- ITEM MODAL -->
+<div class="modal-overlay" id="itemModalOverlay">
+  <div class="modal">
+    <div class="modal-head">
+      <h3 id="itemModalTitle" style="margin:0;">Add Menu Item</h3>
+      <button class="cart-close" onclick="Admin.closeItemModal()">✕</button>
+    </div>
+    <form class="styled" id="itemForm">
+      <input type="hidden" id="itemEditKey">
+      <div><label>Dish Name</label><input type="text" id="itemName" required></div>
+      <div class="field-grid">
+        <div>
+          <label>Category</label>
+          <select id="itemCategory" required></select>
+        </div>
+        <div>
+          <label>Veg / Non-Veg</label>
+          <select id="itemVeg"><option value="true">🟢 Veg</option><option value="false">🔴 Non-Veg</option></select>
+        </div>
+      </div>
+      <div class="field-grid">
+        <div><label>Price (₹)</label><input type="number" id="itemPrice" required></div>
+        <div><label>Rating</label><input type="number" step="0.1" min="1" max="5" id="itemRating" value="4.5"></div>
+      </div>
+      <div><label>Description</label><textarea id="itemDesc" placeholder="Short description shown on the menu card"></textarea></div>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-outline btn-sm" onclick="Admin.closeItemModal()">Cancel</button>
+        <button type="submit" class="btn btn-primary btn-sm">Save Item</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- CATEGORY MODAL -->
+<div class="modal-overlay" id="catModalOverlay">
+  <div class="modal">
+    <div class="modal-head">
+      <h3 style="margin:0;">Add Category</h3>
+      <button class="cart-close" onclick="Admin.closeCategoryModal()">✕</button>
+    </div>
+    <form class="styled" id="catForm">
+      <div><label>Category Name</label><input type="text" id="catName" required></div>
+      <div><label>Group (section on menu page)</label><input type="text" id="catGroup" required placeholder="e.g. Beverages"></div>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-outline btn-sm" onclick="Admin.closeCategoryModal()">Cancel</button>
+        <button type="submit" class="btn btn-primary btn-sm">Save Category</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- GALLERY MODAL -->
+<div class="modal-overlay" id="galModalOverlay">
+  <div class="modal">
+    <div class="modal-head">
+      <h3 style="margin:0;">Add Gallery Image</h3>
+      <button class="cart-close" onclick="Admin.closeGalleryModal()">✕</button>
+    </div>
+    <form class="styled" id="galForm">
+      <div><label>Title</label><input type="text" id="galTitle" required></div>
+      <div><label>Category</label><input type="text" id="galCat" required placeholder="e.g. Mandi"></div>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-outline btn-sm" onclick="Admin.closeGalleryModal()">Cancel</button>
+        <button type="submit" class="btn btn-primary btn-sm">Save Image</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- CONFIRM MODAL -->
+<div class="modal-overlay" id="confirmModalOverlay">
+  <div class="modal" style="max-width:380px;text-align:center;">
+    <h3 id="confirmMsg">Are you sure?</h3>
+    <p style="margin-bottom:0;">This action cannot be undone.</p>
+    <div class="modal-actions" style="justify-content:center;">
+      <button class="btn btn-outline btn-sm" id="confirmCancel">Cancel</button>
+      <button class="btn btn-danger btn-sm" id="confirmOk">Delete</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/stock-photos.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

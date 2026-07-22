@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — Jungle Foods</title>
+<meta name="description" content="Visit or contact Jungle Foods on the Cuddalore–Chidambaram Highway, Manjakuzhi. Open 10AM–10PM daily.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+
+<div class="page-loader"><img src="assets/logo.png" alt="Loading"><span>Finding the Way…</span></div>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="navbar" id="siteNav">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="Jungle Foods logo">
+      <span class="brand-name">Jungle Foods<span>MANDI · BIRIYANI · MULTI-CUISINE</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" data-page="home">Home</a>
+      <a href="menu.html" data-page="menu">Menu</a>
+      <a href="about.html" data-page="about">About</a>
+      <a href="gallery.html" data-page="gallery">Gallery</a>
+      <a href="reviews.html" data-page="reviews">Reviews</a>
+      <a href="contact.html" data-page="contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="menu.html" class="btn btn-primary btn-sm">Order Now</a>
+      <button class="cart-btn" id="cartToggle" aria-label="Open cart">🧺<span class="cart-count">0</span></button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / <span>Contact</span></div>
+    <div class="eyebrow" style="justify-content:center;">We'd love to see you</div>
+    <h1>Find Us in the Jungle</h1>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container contact-grid">
+    <div class="reveal">
+      <div class="card">
+        <div class="contact-info-card">
+          <div class="contact-icon">📍</div>
+          <div>
+            <h3 style="margin-bottom:4px;">Address</h3>
+            <p style="margin:0;">Jungle Foods, FPM7+5RJ, Cuddalore–Chidambaram Highway, Manjakuzhi, Tamil Nadu – 608501</p>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-icon">📞</div>
+          <div>
+            <h3 style="margin-bottom:4px;">Phone</h3>
+            <p style="margin:0;"><a href="tel:+919600420706">+91 96004 20706</a></p>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-icon">🕙</div>
+          <div>
+            <h3 style="margin-bottom:4px;">Opening Hours</h3>
+            <p style="margin:0;">10:00 AM – 10:00 PM, Every Day</p>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-icon">📷</div>
+          <div>
+            <h3 style="margin-bottom:4px;">Instagram</h3>
+            <p style="margin:0;"><a href="https://www.instagram.com/jungle_foods_" target="_blank">@jungle_foods_</a></p>
+          </div>
+        </div>
+        <div class="quick-actions">
+          <a href="tel:+919600420706" class="btn btn-primary">📞 Call Now</a>
+          <a href="https://wa.me/919600420706" target="_blank" class="btn btn-outline">💬 WhatsApp</a>
+          <a href="https://www.instagram.com/jungle_foods_" target="_blank" class="btn btn-wood">📷 Instagram</a>
+        </div>
+        <div class="map-frame">
+          <iframe
+            src="https://www.google.com/maps?q=FPM7%2B5RJ+Manjakuzhi+Tamil+Nadu&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Jungle Foods location on Google Maps"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <div class="card">
+        <h3>Send Us a Message</h3>
+        <form class="styled" id="contactForm">
+          <div class="form-row">
+            <div><label>Full Name</label><input type="text" required placeholder="Your name"></div>
+            <div><label>Phone Number</label><input type="tel" required placeholder="+91 …"></div>
+          </div>
+          <div><label>Email</label><input type="email" placeholder="you@example.com"></div>
+          <div><label>Message</label><textarea required placeholder="How can we help?"></textarea></div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" id="siteFooter"></footer>
+
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-head">
+    <h3 style="margin:0;">Your Basket</h3>
+    <button class="cart-close" id="cartClose" aria-label="Close cart">✕</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-foot">
+    <div class="cart-total-row"><span>Total</span><span id="cartTotal">₹0</span></div>
+    <button class="btn btn-primary btn-block" id="checkoutBtn">Checkout via WhatsApp</button>
+  </div>
+</aside>
+
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+<script src="js/main.js"></script>
+<script src="js/footer.js"></script>
+<script>
+document.getElementById('contactForm').addEventListener('submit', (e) => {
+  e.preventDefault();
+  JF.toast("Thanks! We'll get back to you shortly.");
+  e.target.reset();
+});
+</script>
+</body>
+</html>

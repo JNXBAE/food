@@ -1,0 +1,21 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="drychicken">
+  <defs>
+    <radialGradient id="g-drychicken" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#7A3A22"/>
+      <stop offset="100%" stop-color="#3E1E12"/>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="96" fill="#3E2712"/>
+  <circle cx="100" cy="100" r="88" fill="url(#g-drychicken)"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#6B4226" stroke-width="4" opacity=".7"/>
+  <circle cx="100" cy="100" r="94" fill="none" stroke="#F2B705" stroke-width="2" opacity=".55" stroke-dasharray="2 5"/>
+  
+    <path d="M78 78 L122 78 L112 142 L88 142 Z" fill="#F4EFE0" opacity=".92"/>
+    <path d="M78 78 L122 78 L118 96 L82 96 Z" fill="#C8462B"/>
+    <circle cx="92" cy="80" r="10" fill="#6B4226"/>
+    <circle cx="108" cy="76" r="9" fill="#8A5A34"/>
+    <circle cx="100" cy="90" r="9" fill="#6B4226"/>
+    <circle cx="88" cy="92" r="7" fill="#8A5A34"/>
+    
+  
+</svg>

@@ -1,0 +1,2155 @@
+{
+  "restaurant": {
+    "name": "Jungle Foods",
+    "tagline": "Mandi | Biriyani | BBQ | Multi-Cuisine",
+    "description": "A multi-cuisine restaurant serving Mandi, Biriyani, Chinese Foods, Indian Breads, Shawarma, Beverages, Desserts, Snacks, and more.",
+    "phone": "+91 9600420706",
+    "whatsapp": "+91 9600420706",
+    "instagram": "https://www.instagram.com/jungle_foods_",
+    "address": "Jungle Foods, FPM7+5RJ, Cuddalore–Chidambaram Highway, Manjakuzhi, Tamil Nadu – 608501",
+    "hours": "10:00 AM – 10:00 PM",
+    "mapsEmbed": "https://www.google.com/maps?q=FPM7%2B5RJ+Manjakuzhi+Tamil+Nadu&output=embed"
+  },
+  "categories": [
+    {
+      "id": "mandi-chicken-mandi-family-pack",
+      "group": "Mandi",
+      "name": "Chicken Mandi (Family Pack)",
+      "icon": "mandi",
+      "items": [
+        {
+          "id": "bbq-chicken-mandi",
+          "name": "BBQ Chicken Mandi",
+          "veg": false,
+          "rating": 4.1,
+          "icon": "mandi",
+          "priceType": "portion",
+          "portions": [
+            {
+              "label": "Full",
+              "serves": "4 Persons",
+              "price": "900"
+            },
+            {
+              "label": "Half",
+              "serves": "2 Persons",
+              "price": "450"
+            },
+            {
+              "label": "Quarter",
+              "serves": "1 Person",
+              "price": "230"
+            }
+          ],
+          "description": "Slow-smoked chicken over fragrant mandi rice, served family style with our signature sides."
+        },
+        {
+          "id": "al-faham-chicken-mandi",
+          "name": "Al Faham Chicken Mandi",
+          "veg": false,
+          "rating": 4.9,
+          "icon": "mandi",
+          "priceType": "portion",
+          "portions": [
+            {
+              "label": "Full",
+              "serves": "4 Persons",
+              "price": "900"
+            },
+            {
+              "label": "Half",
+              "serves": "2 Persons",
+              "price": "450"
+            },
+            {
+              "label": "Quarter",
+              "serves": "1 Person",
+              "price": "230"
+            }
+          ],
+          "description": "Slow-smoked chicken over fragrant mandi rice, served family style with our signature sides."
+        },
+        {
+          "id": "grill-chicken-mandi",
+          "name": "Grill Chicken Mandi",
+          "veg": false,
+          "rating": 4.3,
+          "icon": "mandi",
+          "priceType": "portion",
+          "portions": [
+            {
+              "label": "Full",
+              "serves": "4 Persons",
+              "price": "900"
+            },
+            {
+              "label": "Half",
+              "serves": "2 Persons",
+              "price": "450"
+            },
+            {
+              "label": "Quarter",
+              "serves": "1 Person",
+              "price": "230"
+            }
+          ],
+          "description": "Slow-smoked chicken over fragrant mandi rice, served family style with our signature sides."
+        },
+        {
+          "id": "tandoori-chicken-mandi",
+          "name": "Tandoori Chicken Mandi",
+          "veg": false,
+          "rating": 4.2,
+          "icon": "mandi",
+          "priceType": "portion",
+          "portions": [
+            {
+              "label": "Full",
+              "serves": "4 Persons",
+              "price": "900"
+            },
+            {
+              "label": "Half",
+              "serves": "2 Persons",
+              "price": "450"
+            },
+            {
+              "label": "Quarter",
+              "serves": "1 Person",
+              "price": "230"
+            }
+          ],
+          "description": "Slow-smoked chicken over fragrant mandi rice, served family style with our signature sides."
+        }
+      ],
+      "extras": [
+        {
+          "name": "Extra Person",
+          "price": "90"
+        },
+        {
+          "name": "Extra Chicken Piece",
+          "price": "130"
+        }
+      ]
+    },
+    {
+      "id": "mandi-other-mandi",
+      "group": "Mandi",
+      "name": "Other Mandi",
+      "icon": "mandi",
+      "items": [
+        {
+          "id": "mutton-mandi",
+          "name": "Mutton Mandi",
+          "veg": false,
+          "rating": 4.4,
+          "icon": "mandi",
+          "priceType": "single",
+          "price": "TBD",
+          "description": ""
+        },
+        {
+          "id": "prawn-mandi",
+          "name": "Prawn Mandi",
+          "veg": false,
+          "rating": 4.2,
+          "icon": "mandi",
+          "priceType": "single",
+          "price": "TBD",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "mandi-chicken-varieties",
+      "group": "Mandi",
+      "name": "Chicken Varieties",
+      "icon": "grill",
+      "items": [
+        {
+          "id": "bbq-chicken",
+          "name": "BBQ Chicken",
+          "veg": false,
+          "rating": 4.8,
+          "icon": "grill",
+          "priceType": "portion",
+          "portions": [
+            {
+              "label": "Full",
+              "serves": "",
+              "price": "440"
+            },
+            {
+              "label": "Half",
+              "serves": "",
+              "price": "220"
+            },
+            {
+              "label": "Quarter",
+              "serves": "",
+              "price": "120"
+            }
+          ],
+          "description": "Char-grilled chicken finished with jungle spice rub, served sizzling hot."
+        },
+        {
+          "id": "al-faham-chicken",
+          "name": "Al Faham Chicken",
+          "veg": false,
+          "rating": 4.7,
+          "icon": "grill",
+          "priceType": "portion",
+          "portions": [
+            {
+              "label": "Full",
+              "serves": "",
+              "price": "440"
+            },
+            {
+              "label": "Half",
+              "serves": "",
+              "price": "220"
+            },
+            {
+              "label": "Quarter",
+              "serves": "",
+              "price": "120"
+            }
+          ],
+          "description": "Char-grilled chicken finished with jungle spice rub, served sizzling hot."
+        },
+        {
+          "id": "grill-chicken",
+          "name": "Grill Chicken",
+          "veg": false,
+          "rating": 4.6,
+          "icon": "grill",
+          "priceType": "portion",
+          "portions": [
+            {
+              "label": "Full",
+              "serves": "",
+              "price": "440"
+            },
+            {
+              "label": "Half",
+              "serves": "",
+              "price": "220"
+            },
+            {
+              "label": "Quarter",
+              "serves": "",
+              "price": "120"
+            }
+          ],
+          "description": "Char-grilled chicken finished with jungle spice rub, served sizzling hot."
+        },
+        {
+          "id": "tandoori-chicken",
+          "name": "Tandoori Chicken",
+          "veg": false,
+          "rating": 4.6,
+          "icon": "grill",
+          "priceType": "portion",
+          "portions": [
+            {
+              "label": "Full",
+              "serves": "",
+              "price": "440"
+            },
+            {
+              "label": "Half",
+              "serves": "",
+              "price": "220"
+            },
+            {
+              "label": "Quarter",
+              "serves": "",
+              "price": "120"
+            }
+          ],
+          "description": "Char-grilled chicken finished with jungle spice rub, served sizzling hot."
+        }
+      ]
+    },
+    {
+      "id": "biriyani-non-veg",
+      "group": "Biriyani",
+      "name": "Non-Veg",
+      "icon": "biriyani",
+      "items": [
+        {
+          "id": "bucket-biriyani-full",
+          "name": "Bucket Biriyani (Full)",
+          "veg": true,
+          "rating": 4.2,
+          "icon": "mandi",
+          "priceType": "single",
+          "price": "999",
+          "description": ""
+        },
+        {
+          "id": "bucket-biriyani-half",
+          "name": "Bucket Biriyani (Half)",
+          "veg": true,
+          "rating": 4.4,
+          "icon": "mandi",
+          "priceType": "single",
+          "price": "499",
+          "description": ""
+        },
+        {
+          "id": "chicken-biriyani",
+          "name": "Chicken Biriyani",
+          "veg": false,
+          "rating": 4.3,
+          "icon": "mandi",
+          "priceType": "single",
+          "price": "120",
+          "description": ""
+        },
+        {
+          "id": "chicken-65-biriyani",
+          "name": "Chicken 65 Biriyani",
+          "veg": false,
+          "rating": 4.6,
+          "icon": "mandi",
+          "priceType": "single",
+          "price": "150",
+          "description": ""
+        },
+        {
+          "id": "mutton-biriyani",
+          "name": "Mutton Biriyani",
+          "veg": false,
+          "rating": 4.2,
+          "icon": "mandi",
+          "priceType": "single",
+          "price": "210",
+          "description": ""
+        },
+        {
+          "id": "egg-biriyani",
+          "name": "Egg Biriyani",
+          "veg": false,
+          "rating": 4.5,
+          "icon": "mandi",
+          "priceType": "single",
+          "price": "90",
+          "description": ""
+        },
+        {
+          "id": "prawn-biriyani",
+          "name": "Prawn Biriyani",
+          "veg": false,
+          "rating": 4.1,
+          "icon": "mandi",
+          "priceType": "single",
+          "price": "180",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "biriyani-veg",
+      "group": "Biriyani",
+      "name": "Veg",
+      "icon": "biriyani",
+      "items": [
+        {
+          "id": "plain-biriyani",
+          "name": "Plain Biriyani",
+          "veg": true,
+          "rating": 4.3,
+          "icon": "mandi",
+          "priceType": "single",
+          "price": "80",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "chinese-foods-fried-rice-non-veg",
+      "group": "Chinese Foods",
+      "name": "Fried Rice - Non-Veg",
+      "icon": "friedrice",
+      "items": [
+        {
+          "id": "chicken-fried-rice",
+          "name": "Chicken Fried Rice",
+          "veg": false,
+          "rating": 4.8,
+          "icon": "friedrice",
+          "priceType": "single",
+          "price": "110",
+          "description": ""
+        },
+        {
+          "id": "egg-fried-rice",
+          "name": "Egg Fried Rice",
+          "veg": false,
+          "rating": 4.5,
+          "icon": "friedrice",
+          "priceType": "single",
+          "price": "90",
+          "description": ""
+        },
+        {
+          "id": "schezwan-chicken-fried-rice",
+          "name": "Schezwan Chicken Fried Rice",
+          "veg": false,
+          "rating": 4.3,
+          "icon": "friedrice",
+          "priceType": "single",
+          "price": "140",
+          "description": ""
+        },
+        {
+          "id": "prawn-fried-rice",
+          "name": "Prawn Fried Rice",
+          "veg": false,
+          "rating": 4.9,
+          "icon": "friedrice",
+          "priceType": "single",
+          "price": "150",
+          "description": ""
+        },
+        {
+          "id": "squid-fried-rice",
+          "name": "Squid Fried Rice",
+          "veg": false,
+          "rating": 4.8,
+          "icon": "friedrice",
+          "priceType": "single",
+          "price": "TBD",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "chinese-foods-fried-rice-veg",
+      "group": "Chinese Foods",
+      "name": "Fried Rice - Veg",
+      "icon": "friedrice",
+      "items": [
+        {
+          "id": "veg-fried-rice",
+          "name": "Veg Fried Rice",
+          "veg": true,
+          "rating": 4.2,
+          "icon": "friedrice",
+          "priceType": "single",
+          "price": "80",
+          "description": ""
+        },
+        {
+          "id": "mushroom-fried-rice",
+          "name": "Mushroom Fried Rice",
+          "veg": true,
+          "rating": 4.4,
+          "icon": "friedrice",
+          "priceType": "single",
+          "price": "130",
+          "description": ""
+        },
+        {
+          "id": "paneer-fried-rice",
+          "name": "Paneer Fried Rice",
+          "veg": true,
+          "rating": 4.1,
+          "icon": "friedrice",
+          "priceType": "single",
+          "price": "130",
+          "description": ""
+        },
+        {
+          "id": "gobi-fried-rice",
+          "name": "Gobi Fried Rice",
+          "veg": true,
+          "rating": 4.5,
+          "icon": "friedrice",
+          "priceType": "single",
+          "price": "110",
+          "description": ""
+        },
+        {
+          "id": "ghee-rice",
+          "name": "Ghee Rice",
+          "veg": true,
+          "rating": 4.5,
+          "icon": "friedrice",
+          "priceType": "single",
+          "price": "140",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "chinese-foods-noodles-non-veg",
+      "group": "Chinese Foods",
+      "name": "Noodles - Non-Veg",
+      "icon": "noodles",
+      "items": [
+        {
+          "id": "chicken-noodles",
+          "name": "Chicken Noodles",
+          "veg": false,
+          "rating": 4.8,
+          "icon": "noodles",
+          "priceType": "single",
+          "price": "110",
+          "description": ""
+        },
+        {
+          "id": "egg-noodles",
+          "name": "Egg Noodles",
+          "veg": false,
+          "rating": 4.5,
+          "icon": "noodles",
+          "priceType": "single",
+          "price": "90",
+          "description": ""
+        },
+        {
+          "id": "schezwan-chicken-noodles",
+          "name": "Schezwan Chicken Noodles",
+          "veg": false,
+          "rating": 4.1,
+          "icon": "noodles",
+          "priceType": "single",
+          "price": "140",
+          "description": ""
+        },
+        {
+          "id": "prawn-noodles",
+          "name": "Prawn Noodles",
+          "veg": false,
+          "rating": 4.5,
+          "icon": "noodles",
+          "priceType": "single",
+          "price": "150",
+          "description": ""
+        },
+        {
+          "id": "squid-noodles",
+          "name": "Squid Noodles",
+          "veg": false,
+          "rating": 4.1,
+          "icon": "noodles",
+          "priceType": "single",
+          "price": "TBD",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "chinese-foods-noodles-veg",
+      "group": "Chinese Foods",
+      "name": "Noodles - Veg",
+      "icon": "noodles",
+      "items": [
+        {
+          "id": "veg-noodles",
+          "name": "Veg Noodles",
+          "veg": true,
+          "rating": 4.2,
+          "icon": "noodles",
+          "priceType": "single",
+          "price": "80",
+          "description": ""
+        },
+        {
+          "id": "mushroom-noodles",
+          "name": "Mushroom Noodles",
+          "veg": true,
+          "rating": 4.6,
+          "icon": "noodles",
+          "priceType": "single",
+          "price": "130",
+          "description": ""
+        },
+        {
+          "id": "paneer-noodles",
+          "name": "Paneer Noodles",
+          "veg": true,
+          "rating": 4.7,
+          "icon": "noodles",
+          "priceType": "single",
+          "price": "130",
+          "description": ""
+        },
+        {
+          "id": "gobi-noodles",
+          "name": "Gobi Noodles",
+          "veg": true,
+          "rating": 4.9,
+          "icon": "noodles",
+          "priceType": "single",
+          "price": "110",
+          "description": ""
+        },
+        {
+          "id": "ghee-noodles",
+          "name": "Ghee Noodles",
+          "veg": true,
+          "rating": 4.8,
+          "icon": "noodles",
+          "priceType": "single",
+          "price": "140",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "chinese-foods-chicken-gravy",
+      "group": "Chinese Foods",
+      "name": "Chicken Gravy",
+      "icon": "curry",
+      "items": [
+        {
+          "id": "chicken-masala",
+          "name": "Chicken Masala",
+          "veg": false,
+          "rating": 4.6,
+          "icon": "curry",
+          "priceType": "single",
+          "price": "200",
+          "description": ""
+        },
+        {
+          "id": "chicken-chilli-gravy",
+          "name": "Chicken Chilli Gravy",
+          "veg": false,
+          "rating": 4.2,
+          "icon": "curry",
+          "priceType": "single",
+          "price": "180",
+          "description": ""
+        },
+        {
+          "id": "chicken-manchurian",
+          "name": "Chicken Manchurian",
+          "veg": false,
+          "rating": 4.2,
+          "icon": "curry",
+          "priceType": "single",
+          "price": "180",
+          "description": ""
+        },
+        {
+          "id": "chicken-kadai-masala-full",
+          "name": "Chicken Kadai Masala (Full)",
+          "veg": false,
+          "rating": 4.5,
+          "icon": "curry",
+          "priceType": "single",
+          "price": "200",
+          "description": ""
+        },
+        {
+          "id": "chicken-kadai-masala-half",
+          "name": "Chicken Kadai Masala (Half)",
+          "veg": false,
+          "rating": 4.7,
+          "icon": "curry",
+          "priceType": "single",
+          "price": "110",
+          "description": ""
+        },
+        {
+          "id": "chicken-malabar",
+          "name": "Chicken Malabar",
+          "veg": false,
+          "rating": 4.4,
+          "icon": "curry",
+          "priceType": "single",
+          "price": "200",
+          "description": ""
+        },
+        {
+          "id": "butter-chicken",
+          "name": "Butter Chicken",
+          "veg": false,
+          "rating": 4.2,
+          "icon": "curry",
+          "priceType": "single",
+          "price": "220",
+          "description": ""
+        },
+        {
+          "id": "chicken-chettinad",
+          "name": "Chicken Chettinad",
+          "veg": false,
+          "rating": 4.8,
+          "icon": "curry",
+          "priceType": "single",
+          "price": "220",
+          "description": ""
+        },
+        {
+          "id": "chicken-tikka-masala",
+          "name": "Chicken Tikka Masala",
+          "veg": false,
+          "rating": 4.8,
+          "icon": "curry",
+          "priceType": "single",
+          "price": "200",
+          "description": ""
+        },
+        {
+          "id": "chicken-hyderabad",
+          "name": "Chicken Hyderabad",
+          "veg": false,
+          "rating": 4.3,
+          "icon": "curry",
+          "priceType": "single",
+          "price": "200",
+          "description": ""
+        },
+        {
+          "id": "chicken-punjabi",
+          "name": "Chicken Punjabi",
+          "veg": false,
+          "rating": 4.2,
+          "icon": "curry",
+          "priceType": "single",
+          "price": "210",
+          "description": ""
+        },
+        {
+          "id": "chicken-schezwan",
+          "name": "Chicken Schezwan",
+          "veg": false,
+          "rating": 4.3,
+          "icon": "curry",
+          "priceType": "single",
+          "price": "180",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "chinese-foods-veg-gravy",
+      "group": "Chinese Foods",
+      "name": "Veg Gravy",
+      "icon": "curry",
+      "items": [
+        {
+          "id": "mushroom-masala",
+          "name": "Mushroom Masala",
+          "veg": true,
+          "rating": 4.2,
+          "icon": "curry",
+          "priceType": "single",
+          "price": "140",
+          "description": ""
+        },
+        {
+          "id": "paneer-butter-gravy",
+          "name": "Paneer Butter Gravy",
+          "veg": true,
+          "rating": 4.2,
+          "icon": "curry",
+          "priceType": "single",
+          "price": "140",
+          "description": ""
+        },
+        {
+          "id": "paneer-manchurian",
+          "name": "Paneer Manchurian",
+          "veg": true,
+          "rating": 4.7,
+          "icon": "curry",
+          "priceType": "single",
+          "price": "140",
+          "description": ""
+        },
+        {
+          "id": "gobi-manchurian",
+          "name": "Gobi Manchurian",
+          "veg": true,
+          "rating": 4.2,
+          "icon": "curry",
+          "priceType": "single",
+          "price": "120",
+          "description": ""
+        },
+        {
+          "id": "gobi-masala",
+          "name": "Gobi Masala",
+          "veg": true,
+          "rating": 4.6,
+          "icon": "curry",
+          "priceType": "single",
+          "price": "140",
+          "description": ""
+        },
+        {
+          "id": "chilli-mushroom",
+          "name": "Chilli Mushroom",
+          "veg": true,
+          "rating": 4.3,
+          "icon": "curry",
+          "priceType": "single",
+          "price": "140",
+          "description": ""
+        },
+        {
+          "id": "chilli-gobi",
+          "name": "Chilli Gobi",
+          "veg": true,
+          "rating": 4.3,
+          "icon": "curry",
+          "priceType": "single",
+          "price": "140",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "chinese-foods-chicken-dry",
+      "group": "Chinese Foods",
+      "name": "Chicken Dry",
+      "icon": "drychicken",
+      "items": [
+        {
+          "id": "dragon-chicken",
+          "name": "Dragon Chicken",
+          "veg": false,
+          "rating": 4.5,
+          "icon": "drychicken",
+          "priceType": "single",
+          "price": "220",
+          "description": ""
+        },
+        {
+          "id": "chicken-65-full",
+          "name": "Chicken 65 (Full)",
+          "veg": false,
+          "rating": 4.7,
+          "icon": "drychicken",
+          "priceType": "single",
+          "price": "160",
+          "description": ""
+        },
+        {
+          "id": "chicken-65-half",
+          "name": "Chicken 65 (Half)",
+          "veg": false,
+          "rating": 4.4,
+          "icon": "drychicken",
+          "priceType": "single",
+          "price": "80",
+          "description": ""
+        },
+        {
+          "id": "boneless-chicken-65-full",
+          "name": "Boneless Chicken 65 (Full)",
+          "veg": false,
+          "rating": 4.5,
+          "icon": "drychicken",
+          "priceType": "single",
+          "price": "180",
+          "description": ""
+        },
+        {
+          "id": "boneless-chicken-65-half",
+          "name": "Boneless Chicken 65 (Half)",
+          "veg": false,
+          "rating": 4.8,
+          "icon": "drychicken",
+          "priceType": "single",
+          "price": "90",
+          "description": ""
+        },
+        {
+          "id": "chicken-lollipop",
+          "name": "Chicken Lollipop",
+          "veg": false,
+          "rating": 4.8,
+          "icon": "drychicken",
+          "priceType": "single",
+          "price": "200",
+          "description": ""
+        },
+        {
+          "id": "chicken-manchurian",
+          "name": "Chicken Manchurian",
+          "veg": false,
+          "rating": 4.2,
+          "icon": "drychicken",
+          "priceType": "single",
+          "price": "200",
+          "description": ""
+        },
+        {
+          "id": "chicken-chilli-dry",
+          "name": "Chicken Chilli Dry",
+          "veg": false,
+          "rating": 4.2,
+          "icon": "drychicken",
+          "priceType": "single",
+          "price": "200",
+          "description": ""
+        },
+        {
+          "id": "chicken-pepper-dry",
+          "name": "Chicken Pepper Dry",
+          "veg": false,
+          "rating": 4.3,
+          "icon": "drychicken",
+          "priceType": "single",
+          "price": "210",
+          "description": ""
+        },
+        {
+          "id": "chicken-ginger",
+          "name": "Chicken Ginger",
+          "veg": false,
+          "rating": 4.8,
+          "icon": "drychicken",
+          "priceType": "single",
+          "price": "200",
+          "description": ""
+        },
+        {
+          "id": "chicken-garlic",
+          "name": "Chicken Garlic",
+          "veg": false,
+          "rating": 4.7,
+          "icon": "drychicken",
+          "priceType": "single",
+          "price": "200",
+          "description": ""
+        },
+        {
+          "id": "pallipalayam-chicken",
+          "name": "Pallipalayam Chicken",
+          "veg": false,
+          "rating": 4.7,
+          "icon": "drychicken",
+          "priceType": "single",
+          "price": "TBD",
+          "description": ""
+        },
+        {
+          "id": "drumstick-chicken-lollipop",
+          "name": "Drumstick Chicken Lollipop",
+          "veg": false,
+          "rating": 4.8,
+          "icon": "drychicken",
+          "priceType": "single",
+          "price": "TBD",
+          "description": ""
+        },
+        {
+          "id": "chicken-sticks",
+          "name": "Chicken Sticks",
+          "veg": false,
+          "rating": 4.7,
+          "icon": "drychicken",
+          "priceType": "single",
+          "price": "TBD",
+          "description": ""
+        },
+        {
+          "id": "chicken-555",
+          "name": "Chicken 555",
+          "veg": false,
+          "rating": 4.3,
+          "icon": "drychicken",
+          "priceType": "single",
+          "price": "220",
+          "description": ""
+        },
+        {
+          "id": "chicken-777",
+          "name": "Chicken 777",
+          "veg": false,
+          "rating": 4.1,
+          "icon": "drychicken",
+          "priceType": "single",
+          "price": "220",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "chinese-foods-veg-dry",
+      "group": "Chinese Foods",
+      "name": "Veg Dry",
+      "icon": "drychicken",
+      "items": [
+        {
+          "id": "mushroom-pepper-dry",
+          "name": "Mushroom Pepper Dry",
+          "veg": true,
+          "rating": 4.2,
+          "icon": "drychicken",
+          "priceType": "single",
+          "price": "130",
+          "description": ""
+        },
+        {
+          "id": "mushroom-65",
+          "name": "Mushroom 65",
+          "veg": true,
+          "rating": 4.7,
+          "icon": "drychicken",
+          "priceType": "single",
+          "price": "120",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "indian-breads-parotta",
+      "group": "Indian Breads",
+      "name": "Parotta",
+      "icon": "parotta",
+      "items": [
+        {
+          "id": "parotta",
+          "name": "Parotta",
+          "veg": true,
+          "rating": 4.4,
+          "icon": "parotta",
+          "priceType": "single",
+          "price": "10",
+          "description": ""
+        },
+        {
+          "id": "coin-parotta",
+          "name": "Coin Parotta",
+          "veg": true,
+          "rating": 4.6,
+          "icon": "parotta",
+          "priceType": "single",
+          "price": "6",
+          "description": ""
+        },
+        {
+          "id": "bun-parotta",
+          "name": "Bun Parotta",
+          "veg": true,
+          "rating": 4.9,
+          "icon": "parotta",
+          "priceType": "single",
+          "price": "35",
+          "description": ""
+        },
+        {
+          "id": "killi-parotta",
+          "name": "Killi Parotta",
+          "veg": true,
+          "rating": 4.3,
+          "icon": "parotta",
+          "priceType": "single",
+          "price": "120",
+          "description": ""
+        },
+        {
+          "id": "nool-parotta",
+          "name": "Nool Parotta",
+          "veg": true,
+          "rating": 4.4,
+          "icon": "parotta",
+          "priceType": "single",
+          "price": "30",
+          "description": ""
+        },
+        {
+          "id": "chilli-parotta",
+          "name": "Chilli Parotta",
+          "veg": true,
+          "rating": 4.9,
+          "icon": "parotta",
+          "priceType": "single",
+          "price": "80",
+          "description": ""
+        },
+        {
+          "id": "chicken-chilli-parotta",
+          "name": "Chicken Chilli Parotta",
+          "veg": false,
+          "rating": 4.9,
+          "icon": "parotta",
+          "priceType": "single",
+          "price": "100",
+          "description": ""
+        },
+        {
+          "id": "kothu-parotta",
+          "name": "Kothu Parotta",
+          "veg": true,
+          "rating": 4.1,
+          "icon": "parotta",
+          "priceType": "single",
+          "price": "100",
+          "description": ""
+        },
+        {
+          "id": "chicken-kothu-parotta",
+          "name": "Chicken Kothu Parotta",
+          "veg": false,
+          "rating": 4.1,
+          "icon": "parotta",
+          "priceType": "single",
+          "price": "130",
+          "description": ""
+        },
+        {
+          "id": "egg-kothu-parotta",
+          "name": "Egg Kothu Parotta",
+          "veg": false,
+          "rating": 4.2,
+          "icon": "parotta",
+          "priceType": "single",
+          "price": "80",
+          "description": ""
+        },
+        {
+          "id": "egg-laapa",
+          "name": "Egg Laapa",
+          "veg": false,
+          "rating": 4.9,
+          "icon": "parotta",
+          "priceType": "single",
+          "price": "30",
+          "description": ""
+        },
+        {
+          "id": "double-egg-laapa",
+          "name": "Double Egg Laapa",
+          "veg": false,
+          "rating": 4.4,
+          "icon": "parotta",
+          "priceType": "single",
+          "price": "50",
+          "description": ""
+        },
+        {
+          "id": "veechu-parotta",
+          "name": "Veechu Parotta",
+          "veg": true,
+          "rating": 4.8,
+          "icon": "parotta",
+          "priceType": "single",
+          "price": "20",
+          "description": ""
+        },
+        {
+          "id": "tandoori-parotta",
+          "name": "Tandoori Parotta",
+          "veg": true,
+          "rating": 4.5,
+          "icon": "parotta",
+          "priceType": "single",
+          "price": "30",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "indian-breads-chapathi-naan",
+      "group": "Indian Breads",
+      "name": "Chapathi & Naan",
+      "icon": "naan",
+      "items": [
+        {
+          "id": "plain-chapathi",
+          "name": "Plain Chapathi",
+          "veg": true,
+          "rating": 4.3,
+          "icon": "naan",
+          "priceType": "single",
+          "price": "30",
+          "description": ""
+        },
+        {
+          "id": "butter-chapathi",
+          "name": "Butter Chapathi",
+          "veg": true,
+          "rating": 4.2,
+          "icon": "naan",
+          "priceType": "single",
+          "price": "30",
+          "description": ""
+        },
+        {
+          "id": "plain-naan",
+          "name": "Plain Naan",
+          "veg": true,
+          "rating": 4.2,
+          "icon": "naan",
+          "priceType": "single",
+          "price": "30",
+          "description": ""
+        },
+        {
+          "id": "butter-naan",
+          "name": "Butter Naan",
+          "veg": true,
+          "rating": 4.3,
+          "icon": "naan",
+          "priceType": "single",
+          "price": "40",
+          "description": ""
+        },
+        {
+          "id": "garlic-naan",
+          "name": "Garlic Naan",
+          "veg": true,
+          "rating": 4.1,
+          "icon": "naan",
+          "priceType": "single",
+          "price": "40",
+          "description": ""
+        },
+        {
+          "id": "kulcha",
+          "name": "Kulcha",
+          "veg": true,
+          "rating": 4.9,
+          "icon": "naan",
+          "priceType": "single",
+          "price": "25",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "shawarma-shawarma",
+      "group": "Shawarma",
+      "name": "Shawarma",
+      "icon": "shawarma",
+      "items": [
+        {
+          "id": "chicken-shawarma-roll",
+          "name": "Chicken Shawarma Roll",
+          "veg": false,
+          "rating": 4.2,
+          "icon": "shawarma",
+          "priceType": "single",
+          "price": "90",
+          "description": ""
+        },
+        {
+          "id": "chicken-shawarma-plate",
+          "name": "Chicken Shawarma Plate",
+          "veg": false,
+          "rating": 4.9,
+          "icon": "shawarma",
+          "priceType": "single",
+          "price": "110",
+          "description": ""
+        },
+        {
+          "id": "tandoori-shawarma",
+          "name": "Tandoori Shawarma",
+          "veg": true,
+          "rating": 4.4,
+          "icon": "shawarma",
+          "priceType": "single",
+          "price": "110",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "egg-items-egg-items",
+      "group": "Egg Items",
+      "name": "Egg Items",
+      "icon": "egg",
+      "items": [
+        {
+          "id": "omelette",
+          "name": "Omelette",
+          "veg": true,
+          "rating": 4.8,
+          "icon": "egg",
+          "priceType": "single",
+          "price": "20",
+          "description": ""
+        },
+        {
+          "id": "half-boil",
+          "name": "Half Boil",
+          "veg": true,
+          "rating": 4.3,
+          "icon": "egg",
+          "priceType": "single",
+          "price": "15",
+          "description": ""
+        },
+        {
+          "id": "kalaki",
+          "name": "Kalaki",
+          "veg": true,
+          "rating": 4.7,
+          "icon": "egg",
+          "priceType": "single",
+          "price": "20",
+          "description": ""
+        },
+        {
+          "id": "egg-podi-mass",
+          "name": "Egg Podi Mass",
+          "veg": false,
+          "rating": 4.7,
+          "icon": "egg",
+          "priceType": "single",
+          "price": "30",
+          "description": ""
+        },
+        {
+          "id": "mutta-chutney",
+          "name": "Mutta Chutney",
+          "veg": true,
+          "rating": 4.9,
+          "icon": "egg",
+          "priceType": "single",
+          "price": "50",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "milkshakes-milkshakes",
+      "group": "Milkshakes",
+      "name": "Milkshakes",
+      "icon": "milkshake",
+      "items": [
+        {
+          "id": "oreo",
+          "name": "Oreo",
+          "veg": true,
+          "rating": 4.5,
+          "icon": "milkshake",
+          "priceType": "single",
+          "price": "80",
+          "description": ""
+        },
+        {
+          "id": "chocoscotch-holics",
+          "name": "Chocoscotch Holics",
+          "veg": true,
+          "rating": 4.5,
+          "icon": "milkshake",
+          "priceType": "single",
+          "price": "80",
+          "description": ""
+        },
+        {
+          "id": "banana-lovers",
+          "name": "Banana Lovers",
+          "veg": true,
+          "rating": 4.2,
+          "icon": "milkshake",
+          "priceType": "single",
+          "price": "80",
+          "description": ""
+        },
+        {
+          "id": "mango-strawberry",
+          "name": "Mango Strawberry",
+          "veg": true,
+          "rating": 4.9,
+          "icon": "milkshake",
+          "priceType": "single",
+          "price": "70",
+          "description": ""
+        },
+        {
+          "id": "snickers",
+          "name": "Snickers",
+          "veg": true,
+          "rating": 4.2,
+          "icon": "milkshake",
+          "priceType": "single",
+          "price": "90",
+          "description": ""
+        },
+        {
+          "id": "bournvita",
+          "name": "Bournvita",
+          "veg": true,
+          "rating": 4.9,
+          "icon": "milkshake",
+          "priceType": "single",
+          "price": "100",
+          "description": ""
+        },
+        {
+          "id": "mixed-fruit-punch",
+          "name": "Mixed Fruit Punch",
+          "veg": true,
+          "rating": 4.8,
+          "icon": "milkshake",
+          "priceType": "single",
+          "price": "60",
+          "description": ""
+        },
+        {
+          "id": "butterscotch",
+          "name": "Butterscotch",
+          "veg": true,
+          "rating": 4.3,
+          "icon": "milkshake",
+          "priceType": "single",
+          "price": "80",
+          "description": ""
+        },
+        {
+          "id": "kesar-badam",
+          "name": "Kesar Badam",
+          "veg": true,
+          "rating": 4.3,
+          "icon": "milkshake",
+          "priceType": "single",
+          "price": "80",
+          "description": ""
+        },
+        {
+          "id": "green-pista",
+          "name": "Green Pista",
+          "veg": true,
+          "rating": 4.6,
+          "icon": "milkshake",
+          "priceType": "single",
+          "price": "80",
+          "description": ""
+        },
+        {
+          "id": "choco-mud",
+          "name": "Choco Mud",
+          "veg": true,
+          "rating": 4.4,
+          "icon": "milkshake",
+          "priceType": "single",
+          "price": "80",
+          "description": ""
+        },
+        {
+          "id": "vanilla-apple-berg",
+          "name": "Vanilla Apple Berg",
+          "veg": true,
+          "rating": 4.2,
+          "icon": "milkshake",
+          "priceType": "single",
+          "price": "70",
+          "description": ""
+        },
+        {
+          "id": "dry-fruit",
+          "name": "Dry Fruit",
+          "veg": true,
+          "rating": 4.4,
+          "icon": "milkshake",
+          "priceType": "single",
+          "price": "100",
+          "description": ""
+        },
+        {
+          "id": "kitkat-magic",
+          "name": "KitKat Magic",
+          "veg": true,
+          "rating": 4.5,
+          "icon": "milkshake",
+          "priceType": "single",
+          "price": "90",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "protein-shake-protein-shake",
+      "group": "Protein Shake",
+      "name": "Protein Shake",
+      "icon": "protein",
+      "items": [
+        {
+          "id": "ultimate-protein-shake",
+          "name": "Ultimate Protein Shake",
+          "veg": true,
+          "rating": 4.8,
+          "icon": "protein",
+          "priceType": "single",
+          "price": "120",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "ice-cream-ice-cream",
+      "group": "Ice Cream",
+      "name": "Ice Cream",
+      "icon": "icecream",
+      "items": [
+        {
+          "id": "vanilla",
+          "name": "Vanilla",
+          "veg": true,
+          "rating": 4.2,
+          "icon": "icecream",
+          "priceType": "single",
+          "price": "50",
+          "description": ""
+        },
+        {
+          "id": "strawberry",
+          "name": "Strawberry",
+          "veg": true,
+          "rating": 4.7,
+          "icon": "icecream",
+          "priceType": "single",
+          "price": "60",
+          "description": ""
+        },
+        {
+          "id": "chocolate",
+          "name": "Chocolate",
+          "veg": true,
+          "rating": 4.3,
+          "icon": "icecream",
+          "priceType": "single",
+          "price": "60",
+          "description": ""
+        },
+        {
+          "id": "mango",
+          "name": "Mango",
+          "veg": true,
+          "rating": 4.6,
+          "icon": "icecream",
+          "priceType": "single",
+          "price": "70",
+          "description": ""
+        },
+        {
+          "id": "vanilla-choco-chips",
+          "name": "Vanilla Choco Chips",
+          "veg": true,
+          "rating": 4.3,
+          "icon": "icecream",
+          "priceType": "single",
+          "price": "80",
+          "description": ""
+        },
+        {
+          "id": "butterscotch",
+          "name": "Butterscotch",
+          "veg": true,
+          "rating": 4.3,
+          "icon": "icecream",
+          "priceType": "single",
+          "price": "80",
+          "description": ""
+        },
+        {
+          "id": "black-currant",
+          "name": "Black Currant",
+          "veg": true,
+          "rating": 4.1,
+          "icon": "icecream",
+          "priceType": "single",
+          "price": "100",
+          "description": ""
+        },
+        {
+          "id": "dry-fruit",
+          "name": "Dry Fruit",
+          "veg": true,
+          "rating": 4.4,
+          "icon": "icecream",
+          "priceType": "single",
+          "price": "120",
+          "description": ""
+        },
+        {
+          "id": "pista",
+          "name": "Pista",
+          "veg": true,
+          "rating": 4.7,
+          "icon": "icecream",
+          "priceType": "single",
+          "price": "70",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "falooda-falooda",
+      "group": "Falooda",
+      "name": "Falooda",
+      "icon": "falooda",
+      "items": [
+        {
+          "id": "falooda",
+          "name": "Falooda",
+          "veg": true,
+          "rating": 4.1,
+          "icon": "falooda",
+          "priceType": "single",
+          "price": "80",
+          "description": ""
+        },
+        {
+          "id": "malai-kulfi-falooda",
+          "name": "Malai Kulfi Falooda",
+          "veg": true,
+          "rating": 4.9,
+          "icon": "falooda",
+          "priceType": "single",
+          "price": "90",
+          "description": ""
+        },
+        {
+          "id": "badami-falooda",
+          "name": "Badami Falooda",
+          "veg": true,
+          "rating": 4.2,
+          "icon": "falooda",
+          "priceType": "single",
+          "price": "120",
+          "description": ""
+        },
+        {
+          "id": "dry-fruit-falooda",
+          "name": "Dry Fruit Falooda",
+          "veg": true,
+          "rating": 4.1,
+          "icon": "falooda",
+          "priceType": "single",
+          "price": "120",
+          "description": ""
+        },
+        {
+          "id": "jungle-special-falooda",
+          "name": "Jungle Special Falooda",
+          "veg": true,
+          "rating": 4.2,
+          "icon": "falooda",
+          "priceType": "single",
+          "price": "150",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "fruit-salad-fruit-salad",
+      "group": "Fruit Salad",
+      "name": "Fruit Salad",
+      "icon": "fruitsalad",
+      "items": [
+        {
+          "id": "royal-fruit-salad",
+          "name": "Royal Fruit Salad",
+          "veg": true,
+          "rating": 4.7,
+          "icon": "fruitsalad",
+          "priceType": "single",
+          "price": "80",
+          "description": ""
+        },
+        {
+          "id": "fruit-salad-ice-cream",
+          "name": "Fruit Salad Ice Cream",
+          "veg": true,
+          "rating": 4.6,
+          "icon": "fruitsalad",
+          "priceType": "single",
+          "price": "100",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "fresh-juice-fresh-juice",
+      "group": "Fresh Juice",
+      "name": "Fresh Juice",
+      "icon": "juice",
+      "items": [
+        {
+          "id": "watermelon",
+          "name": "Watermelon",
+          "veg": true,
+          "rating": 4.9,
+          "icon": "juice",
+          "priceType": "single",
+          "price": "40",
+          "description": ""
+        },
+        {
+          "id": "pineapple",
+          "name": "Pineapple",
+          "veg": true,
+          "rating": 4.3,
+          "icon": "juice",
+          "priceType": "single",
+          "price": "50",
+          "description": ""
+        },
+        {
+          "id": "grape",
+          "name": "Grape",
+          "veg": true,
+          "rating": 4.1,
+          "icon": "juice",
+          "priceType": "single",
+          "price": "50",
+          "description": ""
+        },
+        {
+          "id": "orange",
+          "name": "Orange",
+          "veg": true,
+          "rating": 4.1,
+          "icon": "juice",
+          "priceType": "single",
+          "price": "60",
+          "description": ""
+        },
+        {
+          "id": "pomegranate",
+          "name": "Pomegranate",
+          "veg": true,
+          "rating": 4.4,
+          "icon": "juice",
+          "priceType": "single",
+          "price": "80",
+          "description": ""
+        },
+        {
+          "id": "apple",
+          "name": "Apple",
+          "veg": true,
+          "rating": 4.8,
+          "icon": "juice",
+          "priceType": "single",
+          "price": "70",
+          "description": ""
+        },
+        {
+          "id": "kiwi",
+          "name": "Kiwi",
+          "veg": true,
+          "rating": 4.7,
+          "icon": "juice",
+          "priceType": "single",
+          "price": "80",
+          "description": ""
+        },
+        {
+          "id": "sathukudi",
+          "name": "Sathukudi",
+          "veg": true,
+          "rating": 4.1,
+          "icon": "juice",
+          "priceType": "single",
+          "price": "50",
+          "description": ""
+        },
+        {
+          "id": "kirni",
+          "name": "Kirni",
+          "veg": true,
+          "rating": 4.7,
+          "icon": "juice",
+          "priceType": "single",
+          "price": "40",
+          "description": ""
+        },
+        {
+          "id": "lemon",
+          "name": "Lemon",
+          "veg": true,
+          "rating": 4.7,
+          "icon": "juice",
+          "priceType": "single",
+          "price": "30",
+          "description": ""
+        },
+        {
+          "id": "lemon-soda",
+          "name": "Lemon Soda",
+          "veg": true,
+          "rating": 4.2,
+          "icon": "juice",
+          "priceType": "single",
+          "price": "30",
+          "description": ""
+        },
+        {
+          "id": "lemon-soda-sweet-salt",
+          "name": "Lemon Soda (Sweet & Salt)",
+          "veg": true,
+          "rating": 4.2,
+          "icon": "juice",
+          "priceType": "single",
+          "price": "30",
+          "description": ""
+        },
+        {
+          "id": "lemon-mint",
+          "name": "Lemon Mint",
+          "veg": true,
+          "rating": 4.9,
+          "icon": "juice",
+          "priceType": "single",
+          "price": "30",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "mojito-mojito",
+      "group": "Mojito",
+      "name": "Mojito",
+      "icon": "mojito",
+      "items": [
+        {
+          "id": "blue-mojito",
+          "name": "Blue Mojito",
+          "veg": true,
+          "rating": 4.5,
+          "icon": "mojito",
+          "priceType": "single",
+          "price": "80",
+          "description": ""
+        },
+        {
+          "id": "green-apple-mojito",
+          "name": "Green Apple Mojito",
+          "veg": true,
+          "rating": 4.8,
+          "icon": "mojito",
+          "priceType": "single",
+          "price": "80",
+          "description": ""
+        },
+        {
+          "id": "black-currant-mojito",
+          "name": "Black Currant Mojito",
+          "veg": true,
+          "rating": 4.5,
+          "icon": "mojito",
+          "priceType": "single",
+          "price": "80",
+          "description": ""
+        },
+        {
+          "id": "mint-mojito",
+          "name": "Mint Mojito",
+          "veg": true,
+          "rating": 4.4,
+          "icon": "mojito",
+          "priceType": "single",
+          "price": "80",
+          "description": ""
+        },
+        {
+          "id": "lime-mojito",
+          "name": "Lime Mojito",
+          "veg": true,
+          "rating": 4.1,
+          "icon": "mojito",
+          "priceType": "single",
+          "price": "80",
+          "description": ""
+        },
+        {
+          "id": "blueberry-mojito",
+          "name": "Blueberry Mojito",
+          "veg": true,
+          "rating": 4.8,
+          "icon": "mojito",
+          "priceType": "single",
+          "price": "80",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "cold-coffee-cold-coffee",
+      "group": "Cold Coffee",
+      "name": "Cold Coffee",
+      "icon": "coldcoffee",
+      "items": [
+        {
+          "id": "cold-coffee",
+          "name": "Cold Coffee",
+          "veg": true,
+          "rating": 4.8,
+          "icon": "coldcoffee",
+          "priceType": "single",
+          "price": "80",
+          "description": ""
+        },
+        {
+          "id": "hard-rock",
+          "name": "Hard Rock",
+          "veg": true,
+          "rating": 4.6,
+          "icon": "coldcoffee",
+          "priceType": "single",
+          "price": "90",
+          "description": ""
+        },
+        {
+          "id": "coffee-on-rocks",
+          "name": "Coffee On Rocks",
+          "veg": true,
+          "rating": 4.5,
+          "icon": "coldcoffee",
+          "priceType": "single",
+          "price": "80",
+          "description": ""
+        },
+        {
+          "id": "chocolate",
+          "name": "Chocolate",
+          "veg": true,
+          "rating": 4.3,
+          "icon": "coldcoffee",
+          "priceType": "single",
+          "price": "80",
+          "description": ""
+        },
+        {
+          "id": "mud-coffee",
+          "name": "Mud Coffee",
+          "veg": true,
+          "rating": 4.3,
+          "icon": "coldcoffee",
+          "priceType": "single",
+          "price": "80",
+          "description": ""
+        },
+        {
+          "id": "strawberry",
+          "name": "Strawberry",
+          "veg": true,
+          "rating": 4.7,
+          "icon": "coldcoffee",
+          "priceType": "single",
+          "price": "70",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "street-food-street-food",
+      "group": "Street Food",
+      "name": "Street Food",
+      "icon": "streetfood",
+      "items": [
+        {
+          "id": "pani-poori",
+          "name": "Pani Poori",
+          "veg": true,
+          "rating": 4.7,
+          "icon": "streetfood",
+          "priceType": "single",
+          "price": "30",
+          "description": ""
+        },
+        {
+          "id": "masala-poori",
+          "name": "Masala Poori",
+          "veg": true,
+          "rating": 4.1,
+          "icon": "streetfood",
+          "priceType": "single",
+          "price": "40",
+          "description": ""
+        },
+        {
+          "id": "bhel-poori",
+          "name": "Bhel Poori",
+          "veg": true,
+          "rating": 4.8,
+          "icon": "streetfood",
+          "priceType": "single",
+          "price": "40",
+          "description": ""
+        },
+        {
+          "id": "curd-poori",
+          "name": "Curd Poori",
+          "veg": true,
+          "rating": 4.7,
+          "icon": "streetfood",
+          "priceType": "single",
+          "price": "40",
+          "description": ""
+        },
+        {
+          "id": "mushroom-fry",
+          "name": "Mushroom Fry",
+          "veg": true,
+          "rating": 4.8,
+          "icon": "streetfood",
+          "priceType": "single",
+          "price": "40",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "frozen-snacks-frozen-snacks",
+      "group": "Frozen Snacks",
+      "name": "Frozen Snacks",
+      "icon": "frozensnack",
+      "items": [
+        {
+          "id": "french-fries",
+          "name": "French Fries",
+          "veg": true,
+          "rating": 4.1,
+          "icon": "frozensnack",
+          "priceType": "single",
+          "price": "69",
+          "description": ""
+        },
+        {
+          "id": "fish-fingers-4-pcs",
+          "name": "Fish Fingers (4 pcs)",
+          "veg": false,
+          "rating": 4.7,
+          "icon": "frozensnack",
+          "priceType": "single",
+          "price": "79",
+          "description": ""
+        },
+        {
+          "id": "chicken-wings-6-pcs",
+          "name": "Chicken Wings (6 pcs)",
+          "veg": false,
+          "rating": 4.9,
+          "icon": "frozensnack",
+          "priceType": "single",
+          "price": "99",
+          "description": ""
+        },
+        {
+          "id": "chicken-nuggets-5-pcs",
+          "name": "Chicken Nuggets (5 pcs)",
+          "veg": false,
+          "rating": 4.9,
+          "icon": "frozensnack",
+          "priceType": "single",
+          "price": "99",
+          "description": ""
+        },
+        {
+          "id": "broasted-chicken-1-pc",
+          "name": "Broasted Chicken (1 pc)",
+          "veg": false,
+          "rating": 4.8,
+          "icon": "frozensnack",
+          "priceType": "single",
+          "price": "99",
+          "description": ""
+        },
+        {
+          "id": "smilies-5-pcs",
+          "name": "Smilies (5 pcs)",
+          "veg": true,
+          "rating": 4.6,
+          "icon": "frozensnack",
+          "priceType": "single",
+          "price": "60",
+          "description": ""
+        },
+        {
+          "id": "mushroom-momos-4-pcs",
+          "name": "Mushroom Momos (4 pcs)",
+          "veg": true,
+          "rating": 4.2,
+          "icon": "frozensnack",
+          "priceType": "single",
+          "price": "70",
+          "description": ""
+        },
+        {
+          "id": "chicken-momos-5-pcs",
+          "name": "Chicken Momos (5 pcs)",
+          "veg": false,
+          "rating": 4.3,
+          "icon": "frozensnack",
+          "priceType": "single",
+          "price": "99",
+          "description": ""
+        },
+        {
+          "id": "veg-roll-4-pcs",
+          "name": "Veg Roll (4 pcs)",
+          "veg": true,
+          "rating": 4.7,
+          "icon": "frozensnack",
+          "priceType": "single",
+          "price": "80",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "snacks-bread",
+      "group": "Snacks",
+      "name": "Bread",
+      "icon": "egg",
+      "items": [
+        {
+          "id": "bread-omelette",
+          "name": "Bread Omelette",
+          "veg": true,
+          "rating": 4.5,
+          "icon": "egg",
+          "priceType": "single",
+          "price": "40",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "snacks-sandwich",
+      "group": "Snacks",
+      "name": "Sandwich",
+      "icon": "sandwich",
+      "items": [
+        {
+          "id": "tandoori-sandwich",
+          "name": "Tandoori Sandwich",
+          "veg": true,
+          "rating": 4.1,
+          "icon": "sandwich",
+          "priceType": "single",
+          "price": "60",
+          "description": ""
+        },
+        {
+          "id": "cheese-sandwich",
+          "name": "Cheese Sandwich",
+          "veg": true,
+          "rating": 4.3,
+          "icon": "sandwich",
+          "priceType": "single",
+          "price": "50",
+          "description": ""
+        },
+        {
+          "id": "egg-sandwich",
+          "name": "Egg Sandwich",
+          "veg": false,
+          "rating": 4.8,
+          "icon": "sandwich",
+          "priceType": "single",
+          "price": "50",
+          "description": ""
+        }
+      ]
+    }
+  ]
+}

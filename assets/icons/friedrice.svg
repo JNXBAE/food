@@ -1,0 +1,27 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="friedrice">
+  <defs>
+    <radialGradient id="g-friedrice" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#3D6B2E"/>
+      <stop offset="100%" stop-color="#173420"/>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="96" fill="#3E2712"/>
+  <circle cx="100" cy="100" r="88" fill="url(#g-friedrice)"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#6B4226" stroke-width="4" opacity=".7"/>
+  <circle cx="100" cy="100" r="94" fill="none" stroke="#F2B705" stroke-width="2" opacity=".55" stroke-dasharray="2 5"/>
+  
+    <path d="M50 108 Q100 128 150 108 L146 130 Q100 148 54 130 Z" fill="#3E2712"/>
+    <ellipse cx="100" cy="104" rx="50" ry="18" fill="#E8C97A"/>
+    <ellipse cx="100" cy="100" rx="44" ry="14" fill="#F2B705"/>
+    <circle cx="80" cy="98" r="3" fill="#3D8361"/>
+    <circle cx="120" cy="96" r="3" fill="#3D8361"/>
+    <circle cx="100" cy="104" r="3" fill="#C8462B"/>
+    <circle cx="90" cy="106" r="2.4" fill="#FFF6DC"/>
+    <circle cx="112" cy="106" r="2.4" fill="#FFF6DC"/>
+    
+  
+        <path d="M78 34 C 72 26, 84 22, 78 12" stroke="#F4EFE0" stroke-width="4" stroke-linecap="round" fill="none" opacity=".55"/>
+        <path d="M100 30 C 94 22, 106 18, 100 8" stroke="#F4EFE0" stroke-width="4" stroke-linecap="round" fill="none" opacity=".7"/>
+        <path d="M122 34 C 116 26, 128 22, 122 12" stroke="#F4EFE0" stroke-width="4" stroke-linecap="round" fill="none" opacity=".55"/>
+        
+</svg>

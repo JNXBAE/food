@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full Menu — Jungle Foods</title>
+<meta name="description" content="Browse the full Jungle Foods menu: Mandi, Biriyani, Chinese Foods, Indian Breads, Shawarma, Beverages, Desserts and Snacks.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="menu">
+
+<div class="page-loader"><img src="assets/logo.png" alt="Loading"><span>Plating the Menu…</span></div>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="navbar" id="siteNav">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="Jungle Foods logo">
+      <span class="brand-name">Jungle Foods<span>MANDI · BIRIYANI · MULTI-CUISINE</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" data-page="home">Home</a>
+      <a href="menu.html" data-page="menu">Menu</a>
+      <a href="about.html" data-page="about">About</a>
+      <a href="gallery.html" data-page="gallery">Gallery</a>
+      <a href="reviews.html" data-page="reviews">Reviews</a>
+      <a href="contact.html" data-page="contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="tel:+919600420706" class="btn btn-primary btn-sm">Call to Order</a>
+      <button class="cart-btn" id="cartToggle" aria-label="Open cart">🧺<span class="cart-count">0</span></button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / <span>Menu</span></div>
+    <div class="eyebrow" style="justify-content:center;">177 dishes, one jungle</div>
+    <h1>The Full Menu</h1>
+    <p style="max-width:560px;margin:0 auto;">From smoky Mandi to icy mojitos — everything is cooked to order. Illustrated icons stand in for each dish while our food photography is being shot; swap them for real photos any time from <code>assets/food/</code>.</p>
+  </div>
+</section>
+
+<div class="menu-toolbar">
+  <div class="container menu-toolbar-inner">
+    <div class="search-box">
+      🔍 <input type="text" id="menuSearch" placeholder="Search dishes — e.g. Mandi, Noodles, Mojito…">
+    </div>
+    <div class="veg-toggle">
+      <button class="chip active" data-veg="all">All</button>
+      <button class="chip" data-veg="veg">🟢 Veg</button>
+      <button class="chip" data-veg="nonveg">🔴 Non-Veg</button>
+    </div>
+  </div>
+</div>
+
+<section class="section-tight">
+  <div class="container menu-layout">
+    <nav class="menu-nav" id="menuNavList" aria-label="Menu categories"></nav>
+    <div id="menuContent"></div>
+  </div>
+</section>
+
+<footer class="footer" id="siteFooter"></footer>
+
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-head">
+    <h3 style="margin:0;">Your Basket</h3>
+    <button class="cart-close" id="cartClose" aria-label="Close cart">✕</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-foot">
+    <div class="cart-total-row"><span>Total</span><span id="cartTotal">₹0</span></div>
+    <button class="btn btn-primary btn-block" id="checkoutBtn">Checkout via WhatsApp</button>
+  </div>
+</aside>
+
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+<script src="js/main.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/stock-photos.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>
